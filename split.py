@@ -33,7 +33,7 @@ X = oneHotEncoder.fit_transform(X).toarray()
 labelEncoder_Y = LabelEncoder()
 label_for_purchase = labelEncoder_Y.fit_transform(Y)
 Y = label_for_purchase
-pp.pprint(label_for_purchase)
+# pp.pprint(label_for_purchase)
 
 '''Target: split the data into training set and test set'''
 from sklearn.model_selection import train_test_split
@@ -45,5 +45,5 @@ from sklearn.preprocessing import StandardScaler
 sc_X = StandardScaler()
 X_train = sc_X.fit_transform(X_train)
 X_test = sc_X.transform(X_test)
-pp.pprint(X_train)
+# pp.pprint(X_train)
 
